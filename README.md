@@ -17,7 +17,7 @@ General Quality-of-Life modpack, keeping all the great things about Vanilla, whi
 - [Configured](https://www.curseforge.com/minecraft/mc-mods/configured) - mod config menu
 - [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling) - Keybind menu search
 - [Controlify](https://www.curseforge.com/minecraft/mc-mods/controlify) - Controller support
-- [Distant Horizons: A Level of Detail mod](https://www.curseforge.com/minecraft/mc-mods/distant-horizons) - Allows you to see far
+- [Distant Horizons: A Level of Detail mod](https://www.curseforge.com/minecraft/mc-mods/distant-horizons) - Allows you to see far. Requires an earlier version due to 1.20.4 having support issues with Iris.
 - [Easy Anvils](https://www.curseforge.com/minecraft/mc-mods/easy-anvils) - Anvil enhancements
 - [Easy Magic](https://www.curseforge.com/minecraft/mc-mods/easy-magic) - Enchantment table enhancements
 - [Easy Shulker Boxes](https://www.curseforge.com/minecraft/mc-mods/easy-shulker-boxes) - Shulker Box enhancements
