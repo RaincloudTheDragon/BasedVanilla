@@ -4,8 +4,10 @@
     "disableInPvP": false,
     "graveCoordinates": true,
     "retrievalType": "BOTH",
+    "mergeOrder": "GRAVE",
     "dropType": "EQUIP",
-    "sneakSwapsDropType": true
+    "sneakSwapsDropType": true,
+    "respectKeepInventory": false
   },
   "experience": {
     "expStorageType": "ALL",
@@ -17,13 +19,20 @@
   "sink": {
     "sinkInAir": true,
     "sinkInWater": true,
-    "sinkInLava": false
+    "sinkInLava": false,
+    "sinkThroughBlocks": true,
+    "replaceBlocks": true
   },
   "decay": {
     "decayEnabled": true,
     "decayModifier": 50,
     "decayBreaksItems": false,
-    "decayRobbing": "FRESH"
+    "decayRobbing": "FRESH",
+    "freshGraveDecayChance": 5,
+    "oldGraveDecayChance": 12,
+    "weatheredGraveDecayChance": 16,
+    "minStageTimeSeconds": 30,
+    "maxStageTimeSeconds": 300
   },
   "server": {
     "graveRobbing": false,

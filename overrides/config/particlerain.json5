@@ -1,35 +1,74 @@
 {
+	"maxParticleAmount": 3000,
 	"particleDensity": 200,
 	"particleStormDensity": 800,
-	"maxParticleAmount": 3000,
 	"particleRadius": 25,
-	"rainDropGravity": 1.0,
-	"snowFlakeGravity": 0.10000000149011612,
-	"desertDustGravity": 0.20000000298023224,
-	"snowRotationAmount": 0.10000000149011612,
-	"snowWindDampening": 3.0,
 	"doRainParticles": true,
+	"doSplashParticles": true,
+	"doSmokeParticles": true,
+	"doRippleParticles": true,
+	"doStreakParticles": true,
 	"doSnowParticles": true,
 	"doSandParticles": true,
 	"doShrubParticles": true,
-	"renderVanillaWeather": false,
-	"doExperimentalFog": false,
-	"alwaysRaining": false,
-	"color": {
-		"rainRed": 0.5,
-		"rainGreen": 0.5,
-		"rainBlue": 1.0,
-		"snowRed": 1.0,
-		"snowGreen": 1.0,
-		"snowBlue": 1.0
+	"doFogParticles": false,
+	"doGroundFogParticles": true,
+	"doRainSounds": true,
+	"doSnowSounds": true,
+	"doSandSounds": true,
+	"rain": {
+		"density": 100,
+		"gravity": 1.0,
+		"windStrength": 0.30000001192092896,
+		"stormWindStrength": 0.5,
+		"opacity": 100,
+		"splashDensity": 5,
+		"size": 2.0
 	},
-	"size": {
-		"rainDropSize": 0.5,
-		"rainSheetSize": 2.0,
-		"snowFlakeSize": 0.10000000149011612,
-		"snowSheetSize": 2.0,
-		"dustMoteSize": 0.10000000149011612,
-		"dustSheetSize": 1.5,
-		"fogSize": 0.5
-	}
+	"snow": {
+		"density": 40,
+		"gravity": 0.07999999821186066,
+		"rotationAmount": 0.029999999329447746,
+		"stormRotationAmount": 0.05000000074505806,
+		"windStrength": 1.0,
+		"stormWindStrength": 3.0,
+		"size": 2.0
+	},
+	"sand": {
+		"density": 80,
+		"gravity": 0.20000000298023224,
+		"windStrength": 0.30000001192092896,
+		"moteSize": 0.10000000149011612,
+		"size": 2.0,
+		"spawnOnGround": true,
+		"matchTags": "minecraft:sand"
+	},
+	"shrub": {
+		"density": 2,
+		"gravity": 0.20000000298023224,
+		"rotationAmount": 0.20000000298023224,
+		"bounciness": 0.20000000298023224
+	},
+	"ripple": {
+		"resolution": 16,
+		"useResourcepackResolution": true
+	},
+	"fog": {
+		"density": 20,
+		"gravity": 0.20000000298023224,
+		"size": 0.5
+	},
+	"groundFog": {
+		"density": 20,
+		"spawnHeight": 64,
+		"size": 8.0
+	},
+	"renderVanillaWeather": false,
+	"tickVanillaWeather": false,
+	"biomeTint": true,
+	"tintMix": 50,
+	"spawnAboveClouds": false,
+	"cloudHeight": 191,
+	"alwaysRaining": false,
+	"yLevelWindAdjustment": true
 }
