@@ -1,18 +1,28 @@
 name: Create Modpack Release
 
 on:
-  push:
-    tags:
-      - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Release tag (e.g., v1.0.0)'
+        required: true
+        type: string
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Create release assets directory
+      - name: Set zip name
+        id: vars
+        run: |
+          ZIP_NAME="BasedVanilla.${{ github.event.inputs.release_tag }}.zip"
+          echo "zip_name=$ZIP_NAME" >> $GITHUB_OUTPUT
+
+      - name: Prepare release assets
         run: |
           mkdir release_assets
           cp -r overrides release_assets/
@@ -20,14 +30,16 @@ jobs:
           cp modlist.html release_assets/
           cp modpack.png release_assets/
 
-      - name: Zip release assets
+      - name: Create ZIP
         run: |
           cd release_assets
-          zip -r ../BasedVanilla-${{ github.ref_name }}.zip .
+          zip -r "../${{ steps.vars.outputs.zip_name }}" .
 
-      - name: Create GitHub Release
+      - name: Upload Release Asset
         uses: softprops/action-gh-release@v2
-        with:
-          files: BasedVanilla-${{ github.ref_name }}.zip
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: ${{ steps.vars.outputs.zip_name }}
+          tag_name: ${{ github.event.inputs.release_tag }}
+          draft: true 
