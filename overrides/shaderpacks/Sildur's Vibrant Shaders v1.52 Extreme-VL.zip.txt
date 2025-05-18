@@ -1,0 +1,26 @@
+#Sat Sep 07 00:51:51 MDT 2024
+shadowDistance=60.0
+eyeLight=6.0
+POM_DEPTH=0.35
+shadow_samples=30
+wtexblend=0.02
+emissive_R=0.4
+wFogDensity=5.0
+Shadows=false
+waterA=3.5
+minlight=0.010
+uwatertint=false
+waterCG=0.125
+Nearshadowplane=0.04
+waterCB=0.1
+TAA_sharpness=1.15
+shadowMapResolution=256
+TAA=false
+Bloom=false
+Farshadowplane=0.6
+Underwater_Fog=false
+uFogDensity=5.0
+emissive_B=0.2
+nMap=2
+POM_DIST=8.0
+emissive_G=0.3

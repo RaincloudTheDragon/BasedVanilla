@@ -1,0 +1,24 @@
+#Fri Sep 06 14:14:58 MDT 2024
+waveSize=0.25
+minlight=0.030
+Clouds=2
+light_brightness=0.1
+Brightness=1.5
+eyeLight=6.0
+POM_DEPTH=0.50
+emissive_R=0.4
+BiomeCheck=false
+Shadows=false
+metallicSky=0.0
+shadowMapResolution=256
+Rain_Drops=false
+causticsStrength=0.1
+Underwater_Fog=false
+cloud_height=64.0
+metalStrength=0.1
+emissive_B=0.2
+nMap=2
+POM_DIST=8.0
+emissive_G=0.3
+Godrays=false
+Fog=false
