@@ -1,6 +1,7 @@
 {
   "main": {
     "graves": true,
+    "disableInPvP": false,
     "graveCoordinates": true,
     "retrievalType": "BOTH",
     "dropType": "EQUIP",
