@@ -4,5 +4,12 @@
     },
     "GuiSettings": {
         "continuous_crafting_saved_value": false
+    },
+    "AutoRefillSettings": {
+        "refill_before_tool_break": {
+            "main": {
+                "keys": "LEFT_SHIFT,R"
+            }
+        }
     }
 }
