@@ -524,7 +524,7 @@ _version = 2
 				maxHorizontalResolution = "BLOCK"
 				#
 				# The radius of the mod's render distance. (measured in chunks)
-				lodChunkRenderDistanceRadius = 128
+				lodChunkRenderDistanceRadius = 64
 				#
 				# Should the blocks underneath avoided blocks gain the color of the avoided block? 
 				# 
@@ -535,7 +535,7 @@ _version = 2
 				# This indicates how quickly LODs decrease in quality the further away they are. 
 				# Higher settings will render higher quality fake chunks farther away, 
 				# but will increase memory and GPU usage.
-				horizontalQuality = "EXTREME"
+				horizontalQuality = "HIGH"
 				#
 				# How should LOD transparency be handled. 
 				# 
@@ -550,7 +550,7 @@ _version = 2
 				# 
 				# Lowest Quality: HEIGHT_MAP
 				# Highest Quality: EXTREME
-				verticalQuality = "EXTREME"
+				verticalQuality = "HIGH"
 				#
 				# What blocks shouldn't be rendered as LODs? 
 				# 
