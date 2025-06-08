@@ -11,7 +11,9 @@ General Quality-of-Life modpack, keeping all the great things about Vanilla, whi
 - 4GB RAM minimum (8GB recommended)
 - Recommend Stylized Resource Pack, must be purchased from Patreon: https://www.patreon.com/c/Stylized/home
 
-## Mods:
+## Components:
+
+### Mods:
 - [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin) - Shows food saturation on hotbar
 - [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads) - Puts heads of players in Chat and player list menu
 - [Configured](https://www.curseforge.com/minecraft/mc-mods/configured) - mod config menu
@@ -44,13 +46,19 @@ General Quality-of-Life modpack, keeping all the great things about Vanilla, whi
 - [Trading Post](https://www.curseforge.com/minecraft/mc-mods/trading-post) - Villager trades are no longer torture
 - [Trinkets](https://www.curseforge.com/minecraft/mc-mods/trinkets) - Slot grouping system
 - [Visual Workbench](https://www.curseforge.com/minecraft/mc-mods/visual-workbench) - Puts stuff above crafting table when working
+- [NetherChested] - another Fuzs mod that adds a massive chest. May be straying a little too far from Vanilla, but it's a huge boon to QOL.
 
-## Resource Packs:
+### Resource Packs:
 - [Enriched Escapism](https://www.curseforge.com/minecraft/texture-packs/enriched-escapism) - I prefer my games without the ideological spoonfeeding.
 - [Xray Ultimate](https://www.curseforge.com/minecraft/texture-packs/xray-ultimate-1-11-compatible) - Cheater!
 
-## Shader Packs - multiple options
+### Shader Packs - multiple options
 - [BSL Shaders](https://www.curseforge.com/minecraft/shaders/bsl-shaders)
 - [Complementary Shaders - Reimagined](https://www.curseforge.com/minecraft/shaders/complementary-reimagined)
 - [Spooklementary](https://www.curseforge.com/minecraft/shaders/spooklementary) - For spooki purposes
 - [Sildur's Vibrant shaders](https://www.curseforge.com/minecraft/shaders/sildurs-vibrant-shaders) - My personal fav
+
+
+## Known Issues:
+- Non-mod components are not listed in curseforge zip manifests. I may combat this by using Prism Launcher or Modrinth .mrpacks instead. For now, resource packs must be manually installed, unless I include them in this repo...
+- Modrinth mods cannot be sent to a curseforge zip without it appending the jarfile. This means they must be manually downloaded as well. Only affects Nvidium, which isn't required if you use any iris shaders.
